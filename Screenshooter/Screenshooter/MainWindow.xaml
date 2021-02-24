@@ -5,8 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Screenshooter"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+        Title="MainWindow" Height="450" Width="343.295">
+    <Grid x:Name="DataGrid">
+        <Button x:Name="startShot" Content="Start" HorizontalAlignment="Left" Margin="10,128,0,0" VerticalAlignment="Top" Width="75" Click="startShot_Click" />
+        <Button x:Name="stopShot" Content="Stop" HorizontalAlignment="Left" Margin="10,163,0,0" VerticalAlignment="Top" Width="75" Click="stopShot_Click"/>
+        <TextBox x:Name="JakiCzas_Box" HorizontalAlignment="Left" Height="23" Margin="10,41,0,0" TextWrapping="Wrap" Text="1" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="CoJakiCzas_Box" HorizontalAlignment="Left" Height="23" Margin="10,100,0,0" TextWrapping="Wrap" Text="1" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="WybierzFolder" Content="Wybierz folder" HorizontalAlignment="Left" Margin="10,304,0,0" VerticalAlignment="Top" Width="85" Click="WybierzFolder_Button" Height="24"/>
+        <Label Content="Jak długo ma robic zrzuty? (minuty)" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="239"/>
+        <Label Content="Co jaki czas ma robić zrzuty? (sekundy)" HorizontalAlignment="Left" Margin="10,69,0,0" VerticalAlignment="Top" Width="221"/>
+        <Label Content="Wybierz ścieżkę zapisu plików" HorizontalAlignment="Left" Margin="10,273,0,0" VerticalAlignment="Top" Width="170"/>
+        <Label x:Name="iloscZrzutow" Content="" HorizontalAlignment="Left" Margin="10,203,0,0" VerticalAlignment="Top" Width="120"/>
+
     </Grid>
 </Window>
